@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Recent messages</h1>
+        <div id="messages"></div>
+        <div>
+            <textarea id="messageInput" placeholder="Enter your message"></textarea>
+            <button onclick="addMessage()">Send</button>
+        </div>
+        <div id="messageDetail" style="display: none;">
+            <h2>Message Detail</h2>
+            <pre id="messageContent"></pre>
+            <button onclick="closeMessageDetail()">Close</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
